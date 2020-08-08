@@ -33,7 +33,7 @@ body {
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 10;
   width: 100%;
