@@ -1,0 +1,25 @@
+$font-stack: 'Ubuntu', sans-serif;
+$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
+);
+
+
+body {
+  background: $primary-color;
+  font: 100% $font-stack;
+  color: $text-color;
+  font-weight: map-get($font-weights, bold );
+}
+
+.main {
+  width: 80%;
+
+  h1 {
+    font: 400% $font-stack;
+  }
+}
