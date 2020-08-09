@@ -1,6 +1,5 @@
 body {
   background: #fff;
-  font: 100% "Ubuntu", sans-serif;
   color: #272727;
   font-weight: 700;
   margin: 0;
@@ -29,7 +28,11 @@ body {
 }
 
 .main h1 {
-  font: 400% "Ubuntu", sans-serif;
+  font: 300% "alfarn", sans-serif;
+}
+
+.main h2 {
+  font-family: "alfarn", sans-serif;
 }
 
 .footer {
@@ -37,7 +40,6 @@ body {
   left: 0;
   bottom: 10;
   width: 100%;
-  margin-top: 1%;
   color: white;
   text-align: center;
   -webkit-box-pack: center;

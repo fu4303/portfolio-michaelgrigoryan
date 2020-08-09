@@ -1,7 +1,8 @@
-$font-stack: 'Ubuntu', sans-serif;
+$font-stack: "alfarn", sans-serif;
 $primary-color: #fff;
 $accent-color: #ff652f;
 $text-color: #272727;
+$font-style: normal;
 $font-weights: (
   "regular": 400,
   "medium": 500,
@@ -11,7 +12,6 @@ $font-weights: (
 
 body {
   background: $primary-color;
-  font: 100% $font-stack;
   color: $text-color;
   font-weight: map-get($font-weights, bold );
   margin: 0;
@@ -31,7 +31,10 @@ body {
   margin-top: 15em;
 
   h1 {
-    font: 400% $font-stack;
+    font: 300% $font-stack;
+  }
+  h2 {
+    font-family: $font-stack;
   }
 }
 
@@ -40,7 +43,6 @@ body {
   left: 0;
   bottom: 10;
   width: 100%;
-  margin-top: 1%;
   color: white;
   text-align: center;
   justify-content: center;
