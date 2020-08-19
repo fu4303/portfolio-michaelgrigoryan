@@ -87,5 +87,8 @@ h1 {
   .sp_4 {
     visibility: hidden;
   }
+  .screenshot_1_framed {
+    width: 250px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
