@@ -109,8 +109,8 @@ const questions = [
     answers: [
       { text: 'Rupee', correct: true },
       { text: 'Euro', correct: false },
-      { text: 'Dollar', correct: true },
-      { text: 'Peso', correct: true },
+      { text: 'Dollar', correct: false },
+      { text: 'Peso', correct: false },
     ]
   }
 ]
