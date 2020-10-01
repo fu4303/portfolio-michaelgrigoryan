@@ -58,6 +58,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  padding-bottom: 10vh;
 }
 
 #contactMe #formClose {
@@ -86,5 +87,7 @@ footer {
   width: 100%;
   text-align: center;
   bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

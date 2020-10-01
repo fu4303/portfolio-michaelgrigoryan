@@ -55,6 +55,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-bottom: 10vh;
   #formClose {
     text-align: center;
     align-items: flex-start;
@@ -72,4 +73,6 @@ footer {
   width: 100%;
   text-align: center;
   bottom: 0;
+  background: rgba(255, 255, 255, 0.5) /* Green background with 30% opacity */;
+  height: auto;
 }
