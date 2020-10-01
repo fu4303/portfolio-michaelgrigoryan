@@ -82,6 +82,10 @@ body {
   text-align: center;
 }
 
+.links .link {
+  text-decoration: none;
+}
+
 footer {
   position: fixed;
   width: 100%;
