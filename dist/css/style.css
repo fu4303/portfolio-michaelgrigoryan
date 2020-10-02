@@ -59,9 +59,9 @@ body {
 }
 
 .main {
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 30vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 25vh;
   width: 100%;
   text-align: left;
   -webkit-box-pack: left;
@@ -116,6 +116,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.links .link {
+  margin: 5px;
 }
 
 footer {

@@ -43,9 +43,9 @@ body {
   text-align: center;
 }
 .main {
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 30vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 25vh;
   width: 100%;
   text-align: left;
   justify-content: left;
@@ -78,6 +78,9 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  .link {
+    margin: 5px;
+  }
 }
 footer {
   position: fixed;
