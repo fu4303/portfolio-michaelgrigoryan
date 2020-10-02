@@ -1,3 +1,39 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -89,5 +125,15 @@ footer {
   bottom: 0;
   background: rgba(255, 255, 255, 0.5);
   height: auto;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 200ms;
+          animation: fadeIn 200ms;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut 200ms;
+          animation: fadeOut 200ms;
 }
 /*# sourceMappingURL=style.css.map */

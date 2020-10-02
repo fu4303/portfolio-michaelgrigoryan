@@ -5,11 +5,17 @@ const main = document.getElementById("main")
 
 const openContactWindow = () => {
     const closeForm = () => {
+        main.classList.remove("fadeOut");
         main.classList.remove("hidden");
+        main.classList.add("fadeIn");
         contactMeDiv.classList.add("hidden");
-    }
+    };
+
     contactMeDiv.classList.remove("hidden");
-    main.classList.add("hidden")
+    contactMeDiv.classList.add("fadeIn");
+    main.classList.add("hidden");
+    main.classList.add("fadeOut");
+
     contactMeCloseButton.addEventListener("click", closeForm);
 };
 
