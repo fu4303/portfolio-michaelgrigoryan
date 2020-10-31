@@ -1,6 +1,5 @@
 $font-stack: "Roboto", sans-serif;
 $primary-color: #fff;
-$accent-color: #ff652f;
 $text-color: #272727;
 $font-style: normal;
 $font-weights: (
@@ -41,69 +40,37 @@ $font-weights: (
   margin: 0;
 }
 body {
-  background: $primary-color;
-  color: $text-color;
   font-weight: map-get($font-weights, bold);
-  margin: 0;
-  padding: 0;
-  max-width: 100vw;
-  max-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  transition: ease-in-out 300ms;
 }
 .main {
-  animation: fadeInUp 500ms;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 25vh;
-  width: 100%;
   text-align: left;
   justify-content: left;
   align-items: flex-start;
-  h1 {
-    font: 300% $font-stack;
-  }
+  animation: fadeInUp 500ms;
+  transition: ease-in-out 300ms;
+  h1,
   h2 {
     font-family: $font-stack;
   }
 }
+
 .hidden {
   display: none;
 }
-#contactMe {
-  padding-top: 30vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 10vh;
-  #formClose {
-    text-align: center;
-    align-items: flex-start;
-    justify-content: left;
-    text-align: center;
-  }
-}
-.links {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  .link {
-    margin: 5px;
-  }
-}
-footer {
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
-  height: auto;
-}
+
 .fadeIn {
   animation: fadeIn 200ms;
 }
+
 .fadeOut {
   animation: fadeOut 200ms;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  width: 100vw;
+  bottom: 0;
 }

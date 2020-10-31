@@ -7,47 +7,54 @@
   <meta property="og:image" content="/static/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <title>Michael Grigoryan</title>
 </head>
 
 <body>
-  <div class="main" id="main">
-    <h1 align="center">Michael Grigoryan</h1>
-    <h4 align="center">Hello👋 I'm Michael Grigoryan a 15 year old Student, Full-Stack Developer and a <u>Creative
-        person</u></h4>
+  <main class="main" id="main">
+    <div class="jumbotron bg-white mt-5">
+      <h2 align="center">Michael Grigoryan</h2>
+      <h4 align="center">Hi👋 I'm Michael Grigoryan a 15 year old Student, Full-Stack Developer and a <u>Creative
+          person</u></h4>
 
-    <div class="links">
-      <a class="btn btn-success link" href="http://api.michaelgrigoryan.com/">APIs</a>
-      <a class="btn btn-dark link" href="https://github.com/MichaelGrigoryan25/">GitHub</a>
-      <a class="btn btn-danger link" href="./button-clicker/">Button Clicker</a>
-      <a class="btn btn-secondary link" href="https://codepen.io/michaelg_2k05">CodePen</a>
-      <a class="btn btn-primary link" id="contactBtn" type="button">Contact Me</a>
+      <div style="text-align: center;" class="links">
+        <a class="mt-2 mr-1 btn btn-success link" href="http://api.michaelgrigoryan.com/">APIs</a>
+        <a class="mt-2 mr-1 btn btn-dark link" href="https://github.com/MichaelGrigoryan25/">GitHub</a>
+        <a class="mt-2 mr-1 btn btn-danger link" href="./button-clicker/">Button Clicker</a>
+        <a class="mt-2 mr-1 btn btn-secondary link" href="https://codepen.io/michaelg_2k05">CodePen</a>
+        <a class="mt-2 mr-1 btn btn-primary link" id="contactBtn" type="button">Contact Me</a>
+      </div>
     </div>
-  </div>
+  </main>
 
-  <div id="contactMe" class="contactmMe hidden">
-    <h1>Contact Me</h1>
-    <form name="contact" netlify>
-      <p>
-        <label>Email <input class="form-control" type="email" name="email" placeholder="example@example.com"
-            required /></label>
+  <div id="contactMe" class="jumbotron bg-white container w-50 contactMe hidden">
+    <form name="contact" class="form-group" netlify>
+
+      <h4 align="right"><i id="formClose" role="button" class="fas fa-times"></i></h4>
+
+      <h2 align="left">Contact Me</h2>
+
+      <hr class="solid" />
+
+      <label class="mt-2" for="email">Email</label>
+      <input class="form-control" type="email" name="email" placeholder="example@example.com" required id="email" />
+
+      <label class="mt-2" for="text">Message</label>
+      <textarea class="form-control" type="text" name="text" id="text" placeholder="Hello..." required></textarea>
+
+      <p align="left" class="mt-4">
+        <button class="btn btn-primary w-100" type="submit">Submit</button>
       </p>
-      <p>
-        <label>Text <textarea class="form-control" type="text" name="text" placeholder="Hello..."
-            required></textarea></label>
-      </p>
-      <p>
-        <button class="btn btn-primary" type="submit">Submit</button>
-        <button type="button" class="btn btn-danger" id="formClose">Close</button>
-      </p>
+
     </form>
   </div>
 
   <footer>
-    <p>&copy; Created with ❤ by <a href="https://github.com/MichaelGrigoryan25">Michael Grigoryan</a></p>
+    <p>Created with <kbd>CODE</kbd> & <kbd>❤</kbd> by <a href="https://github.com/MichaelGrigoryan25">Michael
+        Grigoryan</a></p>
   </footer>
 
   <script src="./js/script.js"></script>

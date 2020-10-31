@@ -68,29 +68,12 @@
 }
 
 body {
-  background: #fff;
-  color: #272727;
   font-weight: 700;
-  margin: 0;
-  padding: 0;
-  max-width: 100vw;
-  max-height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
 }
 
 .main {
-  -webkit-animation: fadeInUp 500ms;
-          animation: fadeInUp 500ms;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 25vh;
-  width: 100%;
   text-align: left;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -98,65 +81,19 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-animation: fadeInUp 500ms;
+          animation: fadeInUp 500ms;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
 }
 
-.main h1 {
-  font: 300% "Roboto", sans-serif;
-}
-
+.main h1,
 .main h2 {
   font-family: "Roboto", sans-serif;
 }
 
 .hidden {
   display: none;
-}
-
-#contactMe {
-  padding-top: 30vh;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  padding-bottom: 10vh;
-}
-
-#contactMe #formClose {
-  text-align: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  text-align: center;
-}
-
-.links {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-.links .link {
-  margin: 5px;
-}
-
-footer {
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
-  height: auto;
 }
 
 .fadeIn {
@@ -167,5 +104,13 @@ footer {
 .fadeOut {
   -webkit-animation: fadeOut 200ms;
           animation: fadeOut 200ms;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  width: 100vw;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
