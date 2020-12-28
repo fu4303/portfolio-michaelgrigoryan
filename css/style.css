@@ -1,0 +1,68 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  animation: fadeIn 350ms;
+  transition: all 350ms;
+}
+a {
+  margin: 0.5rem;
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+.projects,
+.socials,
+.main {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.github-profile-picture {
+  padding: 20px;
+  border-radius: 2rem;
+}
+.list-group-item {
+  border: none;
+  padding: 0;
+}
+.list-group-item img {
+  width: 50%;
+}
+
+.contactMe {
+  transition: all 350ms;
+  animation: fadeIn 350ms;
+}
+
+@media screen and (min-width: 320px) {
+  .list-group-item img {
+    width: 100%;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 350ms;
+  transition: ease-in 350ms;
+}
+
+.fade-out {
+  animation: fadeOut 350ms;
+  transition: ease-out 350ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
