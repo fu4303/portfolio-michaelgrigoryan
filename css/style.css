@@ -12,10 +12,22 @@ a {
 }
 .projects,
 .socials,
+.links,
 .main {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+.links,
+.socials,
+.projects {
+  width: 40%;
+}
+
+.list-group {
+  width: 100%;
+}
+
 .github-profile-picture {
   padding: 20px;
   border-radius: 2rem;
@@ -24,17 +36,19 @@ a {
   border: none;
   padding: 0;
 }
-.list-group-item img {
-  width: 50%;
-}
 
 .contactMe {
   transition: all 350ms;
   animation: fadeIn 350ms;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
   .list-group-item img {
+    width: 100%;
+  }
+  .projects,
+  .links,
+  .socials {
     width: 100%;
   }
 }
