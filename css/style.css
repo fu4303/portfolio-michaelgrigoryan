@@ -40,6 +40,7 @@ a {
 .contactMe {
   transition: all 350ms;
   animation: fadeIn 350ms;
+  width: 40%;
 }
 
 @media screen and (max-width: 768px) {
@@ -49,6 +50,9 @@ a {
   .projects,
   .links,
   .socials {
+    width: 100%;
+  }
+  .contactMe {
     width: 100%;
   }
 }
