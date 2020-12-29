@@ -19,28 +19,32 @@ const getRandom = (arr, n) => {
 };
 
 window.onload = async () => {
-  const githubReposRequest = await fetch(GITHUB_REPO_API_BASE_URL);
-  var githubRepos = Array.from(await githubReposRequest.json());
+  const githubReposRequest = await fetch(GITHUB_REPO_API_BASE_URL),
+    githubImageRequest = await fetch(GITHUB_USER_API_BASE_URL),
+    githubImageResponse = await githubImageRequest.json(),
+    repoList = document.querySelector(".list-group"),
+    githubImage = document.querySelector(".github-profile-picture"),
+    favicon = document.createElement("link");
 
+  var githubRepos = Array.from(await githubReposRequest.json());
   githubRepos = getRandom(githubRepos, 5);
 
-  const githubImageRequest = await fetch(GITHUB_USER_API_BASE_URL);
-  const githubImageResponse = await githubImageRequest.json();
-  const image = githubImageResponse.avatar_url;
-
-  const repoList = document.querySelector(".list-group");
-  const githubImage = document.querySelector(".github-profile-picture");
-
-  githubImage.src = image;
+  // Profile photo as favicon
+  favicon.rel = "shortcut icon";
+  favicon.type = "image/x-icon";
+  favicon.href = githubImageResponse.avatar_url;
+  document.head.appendChild(favicon);
+  // Profile photo
+  githubImage.src = githubImageResponse.avatar_url;
 
   githubRepos.forEach((repo) => {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    const img = document.createElement("img");
+    const li = document.createElement("li"),
+      a = document.createElement("a"),
+      img = document.createElement("img");
 
     const CardLink =
-      GITHUB_CARD_API_BASE_URL + GITHUB_USERNAME + "/" + repo.name + ".svg";
-    const RepoLink = GITHUB_BASE_URL + GITHUB_USERNAME + "/" + repo.name;
+        GITHUB_CARD_API_BASE_URL + GITHUB_USERNAME + "/" + repo.name + ".svg",
+      RepoLink = GITHUB_BASE_URL + GITHUB_USERNAME + "/" + repo.name;
 
     img.src = CardLink;
 
