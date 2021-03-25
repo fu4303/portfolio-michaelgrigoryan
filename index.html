@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <!-- Ubuntu Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- Title -->
+  <title>Michael Grigoryan</title>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+</head>
+
+<body>
+  <div class="container main">
+    <div class="container text-center">
+      <img height="200" class="github-profile-picture" alt="Michael Grigoryan" />
+    </div>
+    <h1 class="fw-bold text-center">
+      Hi
+      <img src="https://emojiguide.org/images/emoji/h/1ikaa3b1iz96mh.png" alt="Waving emoji" height="40"
+        class="text-center" />, I'm Michael!
+    </h1>
+    <div class="container">
+      <h3 class="fw-bold text-center">I'm a 15 y/o programming enthusiast</h3>
+    </div>
+    <div class="container rounded-3 border p-3 socials text-center">
+      <h4 class="fw-bold">My Socials</h4>
+      <div class="container">
+        <a href="https://dev.to/michaelgrigoryan25">
+          <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Michael Grigoryan's Dev.to Profile"
+            height="30" width="30" />
+        </a>
+        <a class="text-link" href="https://codepen.io/michaelg_2k05">
+          <img
+            src="https://camo.githubusercontent.com/86109d59a613c31e824ab0bcbec853ebc5ef93c65da92cb0dfa77d2cb8979000/68747470733a2f2f7777772e666c617469636f6e2e636f6d2f7376672f7374617469632f69636f6e732f7376672f323131312f323131313335312e737667"
+            alt="Michael Grigoryan's CodePen Profile" height="30" width="30" />
+        </a>
+        <a href="https://www.reddit.com/user/michael-grigoryan">
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_reddit-128.png"
+            alt="Michael Grigoryan's Reddit Profile" height="30" width="30" />
+        </a>
+      </div>
+    </div>
+    <div class="container rounded-3 border p-3 links">
+      <h4 class="fw-bold text-center">Links</h4>
+      <div class="container d-grid">
+        <a class="btn btn-light text-center border" href="https://github.com/MichaelGrigoryan25">
+          <img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111425.svg" alt="GitHub Logo" height="20"
+            width="20" />
+          GitHub</a>
+        <a class="btn btn-primary contact-button">
+          <i class="fas fa-envelope-open-text"></i>
+          Contact Me
+        </a>
+        <a class="btn btn-danger" href="/button-clicker/">
+          <img height="20" width="20" src="/button-clicker/img/logo.png" alt="Button Clicker Logo"
+            style="border-radius: 999rem" />
+          Button Clicker
+        </a>
+      </div>
+    </div>
+    <div class="container rounded-3 border p-3 projects">
+      <h4 class="fw-bold text-center">
+        Random projects from
+        <a href="https://github.com/MichaelGrigoryan25">GitHub</a>
+      </h4>
+      <ul class="list-group text-center"></ul>
+    </div>
+  </div>
+
+  <!-- Contact form -->
+
+  <div class="container contactMe hidden p-5">
+    <form name="contact" class="form-group" netlify>
+      <h2 class="text-center fw-bold">
+        <i class="fas fa-envelope-open-text"></i>
+        Contact Me
+      </h2>
+
+      <label class="mt-2" for="email">
+        <i class="fas fa-address-card"></i>
+        Email <b><span style="color: red">*</span></b></label>
+      <input class="form-control" type="email" name="email" placeholder="example@example.com" required id="email" />
+
+      <label class="mt-2" for="text">
+        <i class="fas fa-sticky-note"></i>
+        Message <b><span style="color: red">*</span></b></label>
+      <textarea class="form-control" type="text" name="text" id="text" rows="4" placeholder="Message..."
+        required></textarea>
+
+      <div class="d-flex mt-2">
+        <button class="w-50 btn btn-success btn-bg btn-block m-1" type="submit">
+          <i class="fas fa-check"></i>
+          Send
+        </button>
+        <button class="w-50 btn btn-danger btn-bg btn-block form-close m-1" type="button">
+          <i class="fas fa-times"></i>
+          Back
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="text-center">
+    <p class="fw-bold">&copy; Michael Grigoryan 2021</p>
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
