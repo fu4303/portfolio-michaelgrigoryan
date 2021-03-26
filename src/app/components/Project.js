@@ -1,9 +1,6 @@
-import { Box } from "@chakra-ui/layout";
-import { Text } from "@chakra-ui/layout";
-import { Stack } from "@chakra-ui/layout";
-import { Badge } from "@chakra-ui/layout";
 import { chakra } from "@chakra-ui/system";
 import { useColorModeValue } from "@chakra-ui/color-mode";
+import { Badge, Stack, Text, Box } from "@chakra-ui/layout";
 
 const Popular = () => {
   return (
@@ -19,46 +16,46 @@ const Project = ({ name, url, language, description, popular }) => {
   return (
     <Box
       p={2}
-      backgroundColor={useColorModeValue("gray.50", "gray.800")}
+      my={1}
       border={"2px"}
       target={"blank"}
       borderRadius={"lg"}
-      style={{
-        textDecoration: "none",
-      }}
       _hover={{
         boxShadow: "md",
-      }}
-      css={{
-        transition: "150ms ease-in-out",
+        transform: "translateY(-5px)",
       }}
       w={[null, null, "lg"]}
+      transition={"150ms ease-in-out"}
       borderColor={useColorModeValue("gray.300", "gray.500")}
+      backgroundColor={useColorModeValue("gray.50", "gray.700")}
     >
-      <Box>
-        <chakra.a
-          href={url}
-          fontSize={"xl"}
-          rel={"noopener"}
-          target={"_blank"}
-          referrerPolicy={"no-referrer"}
-          color={useColorModeValue("blue.500", "blue.300")}
-        >
-          {name} {popular && <Popular />}
-        </chakra.a>
-      </Box>
-
-      <Stack userSelect={"none"} mt={1} spacing={1}>
-        <Text fontWeight={"semibold"} fontSize={["sm", "md"]}>
-          {description}
-        </Text>
-        {language && (
-          <Text fontSize={"xs"}>
-            Written in{" "}
-            <chakra.span fontWeight={"semibold"}>{language}</chakra.span>
+      <chakra.a
+        href={url}
+        rel={"noopener"}
+        target={"_blank"}
+        referrerPolicy={"no-referrer"}
+      >
+        <Box>
+          <Text
+            fontSize={"xl"}
+            color={useColorModeValue("blue.500", "blue.300")}
+          >
+            {name} {popular && <Popular />}
           </Text>
-        )}
-      </Stack>
+        </Box>
+
+        <Stack userSelect={"none"} mt={1} spacing={1}>
+          <Text fontWeight={"semibold"} fontSize={["sm", "md"]}>
+            {description}
+          </Text>
+          {language && (
+            <Text fontSize={"xs"}>
+              Written in{" "}
+              <chakra.span fontWeight={"semibold"}>{language}</chakra.span>
+            </Text>
+          )}
+        </Stack>
+      </chakra.a>
     </Box>
   );
 };

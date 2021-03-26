@@ -103,10 +103,11 @@ const Home = () => {
                   rel={"noopener"}
                   target={"_blank"}
                   fontWeight={"bold"}
+                  referrerPolicy={"no-referrer"}
+                  transition={"150ms ease-in-out"}
                   _hover={{
                     color: useColorModeValue("blue.500", "blue.300"),
                   }}
-                  referrerPolicy={"no-referrer"}
                   href={"https://github.com/michaelgrigoryan25"}
                 >
                   GitHub ➝

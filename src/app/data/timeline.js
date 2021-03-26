@@ -1,4 +1,4 @@
-module.exports = [
+const timeline = [
   {
     time: {
       from: "Now",
@@ -29,3 +29,5 @@ module.exports = [
     description: "Wrote my first line of code (13-years-old)",
   },
 ];
+
+export default timeline;
